@@ -8,4 +8,4 @@ EXPOSE 7681
 WORKDIR /root
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["ttyd", "bash"]
+CMD ["ttyd", "-t enableZmodem=true -t enableTrzsz=true -t enableSixel=true -t cursorStyle=bar -t enableTrzsz=true -t fontSize=20", "bash"]
